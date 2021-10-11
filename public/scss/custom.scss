@@ -1,0 +1,15 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+  "cases": $teal-200,
+  "deaths": $red-300,
+);
+
+@each $key, $value in $custom-colors {
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
